@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#002116",
+                        "surface-container-highest": "#e1e3e2",
+                        "on-tertiary-container": "#493f18",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#eceeed",
+                        "primary": "#00261b",
+                        "on-primary-container": "#79a894",
+                        "surface-container-high": "#e6e9e8",
+                        "secondary-container": "#fed65b",
+                        "primary-fixed": "#bcedd7",
+                        "surface-dim": "#d8dada",
+                        "on-surface": "#191c1c",
+                        "on-tertiary-fixed": "#221b00",
+                        "primary-fixed-dim": "#a0d1bc",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#e9c349",
+                        "inverse-surface": "#2e3131",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#745c00",
+                        "on-primary-fixed-variant": "#214f3f",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#b9ab7a",
+                        "surface-variant": "#e1e3e2",
+                        "tertiary-fixed-dim": "#d5c693",
+                        "tertiary-fixed": "#f2e2ad",
+                        "on-tertiary-fixed-variant": "#51461f",
+                        "secondary": "#735c00",
+                        "surface-tint": "#396756",
+                        "inverse-on-surface": "#eff1f0",
+                        "on-surface-variant": "#414944",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f8faf9",
+                        "surface-bright": "#f8faf9",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#191c1c",
+                        "outline-variant": "#c0c8c3",
+                        "outline": "#717974",
+                        "inverse-primary": "#a0d1bc",
+                        "background": "#f8faf9",
+                        "tertiary": "#695e34",
+                        "secondary-fixed": "#ffe088",
+                        "primary-container": "#0b3d2e",
+                        "surface-container-low": "#f2f4f3",
+                        "on-secondary-fixed-variant": "#574500"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "sm": "12px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Noto Serif"],
+                        "display-lg": ["Noto Serif"],
+                        "headline-sm": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .islamic-pattern {
+            background-color: transparent;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l2.5 7.5L40 10l-7.5 2.5L30 20l-2.5-7.5L20 10l7.5-2.5L30 0zM0 30l2.5 7.5L10 40l-7.5 2.5L0 50l-2.5-7.5L-10 40l7.5-2.5L0 30z' fill='%230b3d2e' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        .weaver-label {
+            border-left: 2px solid #CBA72F;
+            padding-left: 12px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden islamic-pattern">
+<!-- Minimal Header for Process View -->
+<header class="flex items-center justify-between px-md py-4 bg-surface border-b border-outline-variant sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<button aria-label="Go back" class="flex items-center justify-center p-2 hover:bg-surface-container rounded-full transition-colors" onclick="window.history.back()">
+<span class="material-symbols-outlined text-on-surface">arrow_back</span>
+</button>
+<h2 class="font-headline-sm text-primary">Kopiah AL-FATIH</h2>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer">shopping_bag</span>
+<span class="material-symbols-outlined text-primary cursor-pointer">person</span>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-gutter py-lg grid grid-cols-1 lg:grid-cols-2 gap-xl">
+<!-- Left: Image Gallery -->
+<section class="space-y-md">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden border border-secondary/10 relative">
+<img class="w-full h-full object-cover" data-alt="A macro studio photograph of a premium black velvet kopiah with an impeccable finish. The lighting is soft and directional, highlighting the rich tactile texture of the fabric. The background is a minimalist off-white with subtle shadows. The aesthetic is luxurious, dignified, and sacred, reflecting centuries of artisanal craftsmanship." src="https://down-id.img.susercontent.com/file/85215b978930765c275120d6c620f71b"/>
+                </div>
+</div>
+<div class="grid grid-cols-4 gap-4">
+</div>
+</section>
+<!-- Right: Product Details -->
+<section class="flex flex-col gap-md">
+<div class="weaver-label">
+<span class="font-label-caps text-secondary uppercase tracking-widest text-xs">Seri AF-005 Otentik</span>
+<h1 class="font-display-lg text-primary mt-2">Kopiah Bordir NU AF-005</h1>
+</div>
+<div class="flex items-end gap-2">
+<p class="font-headline-md text-primary">Rp 55.000</p>
+</div>
+<div class="space-y-4 py-md border-y border-outline-variant/30">
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
+                    Dibuat dengan sangat teliti dari beludru premium khas kami. Model AF-005 mewakili puncak keahlian sakral, menawarkan bentuk yang terstruktur yang mempertahankan bentuknya sekaligus memberikan kenyamanan lembut untuk ibadah harian.
+                </p>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">verified</span> Beludru hitam premium pilihan</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">verified</span> Lapisan satin dalam penyerap keringat</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-sm">verified</span> Struktur sirkulasi udara untuk kenyamanan seharian</li>
+</ul>
+</div>
+<!-- Size Picker -->
+<div class="space-y-4">
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-primary">Ukuran</span>
+</div>
+<div class="grid grid-cols-6 gap-2" id="size-picker">
+<button class="py-3 border border-outline-variant hover:border-primary font-body-md transition-all">3</button>
+<button class="py-3 border border-outline-variant hover:border-primary font-body-md transition-all">4</button>
+<button class="py-3 border border-primary bg-primary text-white font-body-md">5</button>
+<button class="py-3 border border-outline-variant hover:border-primary font-body-md transition-all">6</button>
+<button class="py-3 border border-outline-variant hover:border-primary font-body-md transition-all">7</button>
+<button class="py-3 border border-outline-variant hover:border-primary font-body-md transition-all">8</button>
+</div>
+</div>
+<!-- Quantity Selector -->
+<!-- Actions -->
+<a class="flex flex-col sm:flex-row gap-4 mt-4" href="https://wa.me/6281336571600">
+<button class="flex-1 bg-primary text-secondary-fixed py-4 font-label-caps uppercase tracking-widest border-2 border-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/10"> pesan </button>
+</a>
+                </button>
+</div>
+<!-- Shipping & Returns -->
+<div class="mt-lg space-y-4 bg-surface-container-low p-md border border-secondary/10">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<div>
+<p class="font-label-caps text-primary text-xs uppercase">Pengiriman Premium</p>
+<p class="text-sm text-on-surface-variant">Gratis pengiriman ke seluruh Indonesia untuk pesanan di atas Rp 200.000. Estimasi pengiriman: 2-3 hari kerja.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">assignment_return</span>
+<div>
+<p class="font-label-caps text-primary text-xs uppercase">Garansi Suci</p>
+<p class="text-sm text-on-surface-variant">Jika ukuran tidak pas, nikmati pengembalian gratis selama 14 hari untuk semua koleksi butik.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white py-xl mt-xl">
+<div class="max-w-[1200px] mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="space-y-4">
+<h2 class="font-headline-sm text-secondary-fixed">Kopiah AF Boutique</h2>
+<p class="text-sm text-primary-fixed opacity-80 leading-relaxed">Berdedikasi untuk melestarikan keahlian kerajinan Islami melalui penutup kepala mewah modern. Setiap karya adalah bukti nyata dari iman dan warisan budaya.</p>
+</div>
+<div class="space-y-4">
+<p class="font-label-caps text-xs tracking-widest text-secondary-fixed uppercase">Menu</p>
+<ul class="space-y-2 text-sm text-primary-fixed opacity-80">
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Tentang Kami</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Panduan Perawatan</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Pesanan Khusus</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Lokasi Toko</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<p class="font-label-caps text-xs tracking-widest text-secondary-fixed uppercase">Hubungi Kami</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer">public</span>
+<span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer">chat_bubble</span>
+<span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer">alternate_email</span>
+</div>
+<p class="text-xs text-primary-fixed opacity-50 mt-8">© 2024 Kopiah AF. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        const sizeButtons = document.querySelectorAll('#size-picker button');
+        sizeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Deselect previous selection
+                const currentSelected = document.querySelector('#size-picker button.bg-primary');
+                if (currentSelected) {
+                    currentSelected.classList.remove('bg-primary', 'text-white', 'border-primary');
+                    currentSelected.classList.add('border-outline-variant', 'hover:border-primary', 'transition-all');
+                }
+                
+                // Select the clicked button
+                button.classList.add('bg-primary', 'text-white', 'border-primary');
+                button.classList.remove('border-outline-variant', 'hover:border-primary', 'transition-all');
+            });
+        });
+    </script>
+</body></html>
